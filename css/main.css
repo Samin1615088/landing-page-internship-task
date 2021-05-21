@@ -1,0 +1,19 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"); */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+root:: {
+  --clr--primary: #fefefe;
+  --clr--secondary: #00d19b;
+
+  --clr--text-primary: #2f2f2f;
+  --clr--bg-light: #fefcfc;
+}
+
+body {
+  font-family: "Alike", sans-serif;
+}

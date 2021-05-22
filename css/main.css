@@ -1,3 +1,6 @@
+/* ----------
+font style
+---------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 *,
@@ -11,24 +14,27 @@
   --clr-secondary: #00d19b;
 
   --clr-text-primary: #2f2f2f;
-  --clr-text-light: #b7b5b5;
+  --clr-text-light: #8f8e8e;
 
-  --clr-bg-light: #fefcfc;
+  --clr-bg-light: ##fefcfc;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5rem;
+  background: var(--clr-bg-light);
 }
 
-/* ----------btn------------- */
+/* ----------
+button
+------------- */
 .btn {
   cursor: pointer;
   padding: 0.8rem 2rem;
+  margin-top: 10px;
   border: 2px solid var(--clr-text-primary);
-
+  background: white;
   text-transform: uppercase;
-
   transition: all 0.3s;
 }
 .btn:hover {
@@ -36,27 +42,42 @@ body {
   color: white;
 }
 
-/* ---------icons------------  */
+/* ---------
+icons
+------------  */
 .rating-icon--checked {
   color: var(--clr-secondary);
 }
 
-/* ----------text modifier class------------*/
+/* ----------------
+text modifier class
+-------------------*/
 .text--light {
   color: var(--clr-text-light);
 }
 .text--bold {
   font-weight: 600;
 }
-/* -----------image responsive------------- */
+
+/* --------------
+image responsive
+----------------- */
 .responsive--img {
   max-width: 100%;
   height: auto;
 }
 
-/* -----------section---------------------- */
+/* -----------
+section
+-------------- */
 section {
   margin-top: 100px;
+  background: white;
+  padding: 50px 0;
+}
+section div {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .container {
@@ -72,20 +93,22 @@ section {
   justify-content: space-between;
 }
 
-/* ----------
+/* ------------
 header section
-------------- */
+--------------- */
 header .product__details {
   margin: auto 0 auto 4rem;
 }
 header .product__company {
   margin: 30px 0;
 }
-header .review__text span {
+header #review__text {
   color: var(--clr-secondary);
 }
 
-/* links */
+/* --------
+links 
+----------*/
 header .link__review {
   color: var(--clr-text-primary);
   text-decoration: none;
@@ -100,22 +123,25 @@ header .link__review:after {
   border-width: 0 0 1px;
   border-style: solid;
 }
-
-/* mouse over link */
 header .link__review:hover {
   color: var(--clr-secondary);
   transition: all 0.1s;
 }
 
-header .tag__price {
+header #tag__price {
   margin: 40px 0 60px;
 }
-header .product__content i {
+
+header #product__content {
+  color: var(--clr-text-light);
+}
+
+header .delivery__info i {
   margin: 0 5px 0 0;
 }
 
 /* ----------
-section
+services
 ------------- */
 .service {
   display: flex;
@@ -129,10 +155,40 @@ section
   font-size: 2.5rem;
 }
 
-/* -----------------------------temp-------------------------------- */
 .column {
   text-align: center;
   padding: 10px;
+}
+
+.displayed__image {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 100%;
+  background: var(--clr-primary);
+  opacity: 0.5;
+
+  transition: 0.3s;
+}
+.arrow:hover {
+  opacity: 1;
+  width: 35px;
+  height: 35px;
+}
+
+#slideLeft {
+  top: 50%;
+  left: 1rem;
+}
+#slideRight {
+  top: 50%;
+  right: 1rem;
 }
 
 #featured {
@@ -141,7 +197,6 @@ section
   /* max-height: 600px; */
   object-fit: cover;
   cursor: pointer;
-  border: 2px solid black;
 }
 
 .thumbnail {
@@ -151,7 +206,6 @@ section
   cursor: pointer;
   opacity: 0.5;
   margin: 5px;
-  border: 2px solid black;
 }
 
 .thumbnail:hover {
@@ -176,25 +230,15 @@ section
   flex-wrap: nowrap;
   overflow-x: auto;
 }
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  transition: 0.3s;
+#slider::-webkit-scrollbar {
+  display: none;
 }
 
-.arrow:hover {
-  opacity: 0.5;
-  width: 35px;
-  height: 35px;
-}
-/* -----------------------------temp-------------------------------- */
 
 /* -----------
 media query
 -------------- */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
   .flexbox {
     flex-direction: column;
   }

@@ -9,10 +9,6 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/4a09e55b99.js" crossorigin="anonymous"></script>
 
-    <!-- font style -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
-
     <!-- css style -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -20,62 +16,68 @@
 </head>
 
 <body>
-
-    <main class="container">
-        <header>
-            <div class="flexbox">
-                <div class="column">
-                    <img id=featured src="https://dummyimage.com/300x300/000/fff&text=image+1">
-
-                    <div id="slide-wrapper">
-                        <i id="slideLeft" class="fas fa-angle-left arrow"></i>
-
-                        <div id="slider">
-                            <img class="thumbnail active" src="https://dummyimage.com/300x300/000/fff&text=image+1">
-                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+2">
-                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+3">
-                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+4">
+    <main>
+        <div class="container">
+            <header>
+                <div class="flexbox">
+                    <!-- image slider  -->
+                    <div class="column">
+                        <div class="displayed__image">
+                            <i id="slideLeft" class="fas fa-angle-left arrow"></i>
+                            <img id=featured src="./images/sofa_1.png">
+                            <i id="slideRight" class="fas fa-angle-right arrow"></i>
                         </div>
 
-                        <i id="slideRight" class="fas fa-angle-right arrow"></i>
+                        <div id="slide-wrapper">
+
+                            <div id="slider">
+                                <img class="thumbnail active" src="./images/sofa_1.png">
+                                <img class="thumbnail" src="./images/sofa_2.png">
+                                <img class="thumbnail" src="./images/sofa_3.png">
+                                <img class="thumbnail" src="./images/sofa_4.png">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- product details -->
+                    <div class="product__details">
+                        <h1 class="">Upholstered Sofa</h1>
+                        <p class="product__company text--bold">
+                            <span id="product__name">Kyara Upholstered Standard Bed</span>
+                            <br>
+                            <span id="product__company">by Zipcode design</span>
+                        </p>
+                        <p id="product__content">Anchor your living room in sophisticated style and
+                            impeccable comfort with a single addition. Perfectly balancing wood accents with fabric
+                            upholstery.</p>
+                        <div class="container__rating-icon">
+                            <span class="fa fa-star rating-icon--checked"></span>
+                            <span class="fa fa-star rating-icon--checked"></span>
+                            <span class="fa fa-star rating-icon--checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p><span id="review__text">(5.0) </span> review based on 250</p>
+                        <a class="link__review" href="#">Submit Review</a>
+                        <h1 id="tag__price">
+                            $567
+                        </h1>
+
+                        <p class="delivery__info">
+                            <i class="fa fa-clock-o"></i>
+                            Dispatched in 7 working days
+                        </p>
+                        <div class="btn__group">
+                            <button class="btn btn-primary">Add to cart</button>
+                            <button class="btn btn-primary">Add to wishlist</button>
+                        </div>
                     </div>
                 </div>
+            </header>
+        </div>
 
-                <div class="product__details">
-                    <h1 class="product__title">Upholstered Sofa</h1>
-                    <p class="product__company text--bold">
-                        <span>Kyara Upholstered Standard Bed</span>
-                        <br>
-                        <span>by Zipcode design</span>
-                    </p>
-                    <p class="product__content">Anchor your living room in sophisticated style and
-                        impeccable comfort with a single addition. Perfectly balancing wood accents with fabric
-                        upholstery.</p>
-                    <div class="container__ratingicon">
-                        <span class="fa fa-star rating-icon--checked"></span>
-                        <span class="fa fa-star rating-icon--checked"></span>
-                        <span class="fa fa-star rating-icon--checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p class="review__text"><span>(5.0) </span> review based on 250</p>
-                    <a class="link__review" href="#">Submit Review</a>
-                    <h1 class="tag__price">
-                        $567
-                    </h1>
-
-                    <p class="product__content">
-                        <i class="fa fa-clock-o"></i>
-                        Dispatched in 7 working days
-                    </p>
-                    <div class="btn__group">
-                        <button class="btn btn-primary">Add to cart</button>
-                        <button class="btn btn-primary">Add to wishlist</button>
-                    </div>
-                </div>
-            </div>
-        </header>
-
+        <!-- services details -->
         <section>
             <div class="flexbox">
                 <div class="service">
@@ -90,7 +92,7 @@
                     <div class="service__text">
                         <h3 class="service__title">Fast & Free Delivery</h3>
                         <p class="service__description">Home Delivery 15$. For free
-                            delivery order over 250$.</p>
+                            delivery order over $250.</p>
                     </div>
                 </div>
                 <div class="service">

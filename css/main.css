@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 *,
 *::before,
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Alike", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5rem;
 }
 
@@ -51,6 +51,11 @@ body {
   height: auto;
 }
 
+/* -----------section---------------------- */
+section {
+  margin-top: 100px;
+}
+
 .container:first-of-type {
   max-width: 1280px;
   margin: auto;
@@ -79,14 +84,9 @@ header .review__text span {
 
 /* links */
 header .link__review {
-  color: var(--clr-secondary);
+  color: var(--clr-text-primary);
   text-decoration: none;
   position: relative;
-}
-/* mouse over link */
-header .link__review:hover {
-  color: var(--clr-text-primary);
-  transition: all 0.3s;
 }
 header .link__review:after {
   content: "";
@@ -97,11 +97,33 @@ header .link__review:after {
   border-width: 0 0 1px;
   border-style: solid;
 }
+
+/* mouse over link */
+header .link__review:hover {
+  color: var(--clr-secondary);
+  transition: all 0.1s;
+}
+
 header .tag__price {
-  margin: 40px 0;
+  margin: 40px 0 60px;
 }
 header .product__content i {
   margin: 0 5px 0 0;
+}
+
+/* ----------
+section
+------------- */
+.service {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+
+.service i {
+  padding: 10px 20px;
+  font-size: 2.5rem;
 }
 
 /* -----------

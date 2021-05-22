@@ -21,6 +21,18 @@ body {
   line-height: 1.5rem;
 }
 
+/* ----------btn------------- */
+.btn {
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--clr-text-primary);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: var(--clr-text-primary);
+  color: white;
+}
+
 /* ---------icons------------  */
 .rating-icon--checked {
   color: var(--clr-secondary);
@@ -58,7 +70,7 @@ header section
 header .product__details {
   margin: auto 0 auto 4rem;
 }
-header .product__company{
+header .product__company {
   margin: 30px 0;
 }
 header .review__text span {
@@ -84,9 +96,11 @@ header .link__review:after {
   border-width: 0 0 1px;
   border-style: solid;
 }
-
-header .tag__price{
+header .tag__price {
   margin: 40px 0;
+}
+header .product__content i {
+  margin: 0 5px 0 0;
 }
 
 /* -----------

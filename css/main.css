@@ -86,6 +86,7 @@ header .link__review {
 /* mouse over link */
 header .link__review:hover {
   color: var(--clr-text-primary);
+  transition: all 0.3s;
 }
 header .link__review:after {
   content: "";
@@ -106,7 +107,7 @@ header .product__content i {
 /* -----------
 media query
 -------------- */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1200px) {
   .flexbox {
     flex-direction: column;
   }

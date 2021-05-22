@@ -24,9 +24,21 @@
     <main class="container">
         <header>
             <div class="flexbox">
-                <div class="product__sliders">
-                    <img class="product__caresole responsive--img" src="https://dummyimage.com/900x900/000/fff"
-                        alt="Product image">
+                <div class="column">
+                    <img id=featured src="https://dummyimage.com/300x300/000/fff&text=image+1">
+
+                    <div id="slide-wrapper">
+                        <i id="slideLeft" class="fas fa-angle-left arrow"></i>
+
+                        <div id="slider">
+                            <img class="thumbnail active" src="https://dummyimage.com/300x300/000/fff&text=image+1">
+                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+2">
+                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+3">
+                            <img class="thumbnail" src="https://dummyimage.com/300x300/000/fff&text=image+4">
+                        </div>
+
+                        <i id="slideRight" class="fas fa-angle-right arrow"></i>
+                    </div>
                 </div>
 
                 <div class="product__details">
@@ -90,8 +102,9 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
